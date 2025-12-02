@@ -280,8 +280,6 @@ model FooterSettings {
   workingHours      String?
   workingHoursBn    String?
   // Trust & Payment
-  trustpilotUrl     String?
-  showTrustpilot    Boolean  @default(false)
   paymentMethods    String[] // Array of payment method image URLs
   showPaymentMethods Boolean @default(true)
   // Newsletter
