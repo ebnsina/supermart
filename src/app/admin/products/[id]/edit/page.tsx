@@ -862,7 +862,7 @@ export default function ProductFormPage() {
                       <FormLabel>ছবিসমূহ</FormLabel>
                       <FormControl>
                         <ImageUpload
-                          images={field.value}
+                          images={field.value || []}
                           onChange={field.onChange}
                           maxImages={5}
                           label="পণ্যের ছবি আপলোড করুন (সর্বোচ্চ ৫টি)"

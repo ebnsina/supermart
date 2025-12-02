@@ -33,8 +33,8 @@ const bannerSchema = z.object({
   subtitleBn: z.string().optional(),
   image: z.string().min(1, 'ছবি আপলোড করুন'),
   link: z.string().optional(),
-  order: z.number().default(0),
-  active: z.boolean().default(true),
+  order: z.number(),
+  active: z.boolean(),
 })
 
 type BannerFormValues = z.infer<typeof bannerSchema>

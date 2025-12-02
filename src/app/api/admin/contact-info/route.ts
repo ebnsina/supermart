@@ -8,9 +8,7 @@ export async function GET() {
     // Create default contact info if none exists
     if (!contactInfo) {
       contactInfo = await prisma.contactInfo.create({
-        data: {
-          paymentMethods: [],
-        },
+        data: {},
       })
     }
 
@@ -34,11 +32,8 @@ export async function PUT(request: Request) {
       addressBn,
       workingHours,
       workingHoursBn,
-      logo,
       description,
       descriptionBn,
-      trustpilot,
-      paymentMethods,
     } = body
 
     // Get or create contact info
@@ -53,11 +48,8 @@ export async function PUT(request: Request) {
           addressBn,
           workingHours,
           workingHoursBn,
-          logo,
           description,
           descriptionBn,
-          trustpilot,
-          paymentMethods: paymentMethods || [],
         },
       })
     } else {
@@ -70,11 +62,8 @@ export async function PUT(request: Request) {
           addressBn,
           workingHours,
           workingHoursBn,
-          logo,
           description,
           descriptionBn,
-          trustpilot,
-          paymentMethods: paymentMethods || [],
         },
       })
     }
