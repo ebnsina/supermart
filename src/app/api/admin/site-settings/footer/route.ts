@@ -8,7 +8,6 @@ export async function GET() {
     if (!settings) {
       settings = await prisma.footerSettings.create({
         data: {
-          showTrustpilot: false,
           showPaymentMethods: true,
           enableNewsletter: true,
         },

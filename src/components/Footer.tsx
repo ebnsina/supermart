@@ -38,7 +38,6 @@ interface ContactInfo {
   logo?: string | null
   description?: string | null
   descriptionBn?: string | null
-  trustpilot?: string | null
   paymentMethods: string[]
 }
 
@@ -148,20 +147,6 @@ export default function Footer() {
                   })}
                 </div>
               </div>
-            )}
-
-            {/* Trustpilot */}
-            {contactInfo?.trustpilot && (
-              <a
-                href={contactInfo.trustpilot}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900"
-              >
-                আমাদের রিভিউ দেখুন{' '}
-                <Star className="w-4 h-4 ml-1 fill-yellow-400 text-yellow-400" />
-                <span className="font-semibold ml-1">Trustpilot</span>
-              </a>
             )}
           </div>
 

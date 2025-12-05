@@ -219,8 +219,6 @@ export default function SiteSettingsPage() {
     addressBn: '',
     workingHours: '',
     workingHoursBn: '',
-    trustpilotUrl: '',
-    showTrustpilot: false,
     paymentMethods: [] as string[],
     showPaymentMethods: true,
     enableNewsletter: true,
