@@ -889,8 +889,6 @@ async function main() {
       email: 'support@supermart.com',
       addressBn: 'ঢাকা, বাংলাদেশ',
       workingHoursBn: 'সকাল ৯টা - রাত ১০টা',
-      trustpilotUrl: 'https://www.trustpilot.com',
-      showTrustpilot: true,
       paymentMethods: [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Nagad_logo.svg/1200px-Nagad_logo.svg.png',
         'https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png',
